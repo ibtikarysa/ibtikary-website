@@ -347,7 +347,59 @@ margin-bottom:15px;
     color:#555;
     line-height:1.7;
     }
-    
+.how-it-works{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.how-it-works h2{
+    color:#0d47a1;
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.steps-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.step-card{
+    background:#fff;
+    padding:30px 25px;
+    border-radius:14px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.step-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.step-number{
+    width:55px;
+    height:55px;
+    margin:0 auto 20px;
+    background:#0d47a1;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.step-card h3{
+    color:#0d47a1;
+    margin-bottom:15px;
+}
+
+.step-card p{
+    color:#555;
+    line-height:1.7;
+    }
 </style>
 
 </head>
@@ -621,6 +673,31 @@ Ibtikary connects manufacturers, licensors and affiliates through one profession
     </div>
 
   </div>
+</section>
+<section class="how-it-works">
+    <h2>How It Works</h2>
+
+    <div class="steps-grid">
+
+        <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Choose a Product</h3>
+            <p>Select one of our premium commercial licensing opportunities.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Promote Your Link</h3>
+            <p>Share your affiliate link through your website, social media or email.</p>
+        </div>
+
+        <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Earn Commissions</h3>
+            <p>Receive commissions from every successful commercial licensing sale.</p>
+        </div>
+
+    </div>
 </section>
 <section class="stats">
 
