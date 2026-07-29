@@ -666,6 +666,43 @@ border-top:2px solid rgba(255,255,255,0.25);
 .view-all-btn:hover{
     background:#e56d00;
 }
+/* ===== Popup ===== */
+
+.popup-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.65);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.popup-box{
+    background:#fff;
+    width:100%;
+    max-width:900px;
+    max-height:90vh;
+    overflow:auto;
+    border-radius:18px;
+    padding:30px;
+    position:relative;
+}
+
+.popup-close{
+    position:absolute;
+    right:20px;
+    top:15px;
+    font-size:34px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.popup-box h2{
+    color:#0d47a1;
+    margin-bottom:25px;
+}
 </style>
 
 </head>
@@ -916,9 +953,9 @@ color:#666;
                     </tbody>
                 </table>
 
-                <button class="view-all-btn">
-                    View All 24 Licenses
-                </button>
+                <button class="view-all-btn" onclick="openPopup('CarBeva')">
+    View All 24 Licenses
+</button>
 
             </div>
 
@@ -1461,6 +1498,82 @@ function toggleMenu() {
     document.querySelector(".menu").classList.toggle("active");
 }
 </script>
+<!-- ===== Popup ===== -->
+<div id="licensePopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <span class="popup-close">&times;</span>
+
+        <h2 id="popupTitle"></h2>
+
+        <div id="popupContent"></div>
+
+    </div>
+
+</div>
+<script>
+const popup = document.getElementById("licensePopup");
+const popupTitle = document.getElementById("popupTitle");
+const popupContent = document.getElementById("popupContent");
+
+function openPopup(product) {
+
+    popup.style.display = "flex";
+
+    if (product === "CarBeva") {
+
+        popupTitle.innerHTML = "🟦 CarBeva - All 24 Licenses";
+
+        popupContent.innerHTML = `
+<table class="growth-table">
+<thead>
+<tr>
+<th>License</th>
+<th>Price</th>
+<th>You Earn</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>#1</td><td>$200</td><td>$60</td></tr>
+<tr><td>#2</td><td>$380</td><td>$114</td></tr>
+<tr><td>#3</td><td>$684</td><td>$205</td></tr>
+<tr><td>#4</td><td>$1,163</td><td>$349</td></tr>
+<tr><td>#5</td><td>$1,860</td><td>$558</td></tr>
+<tr><td>#6</td><td>$2,791</td><td>$837</td></tr>
+<tr><td>#7</td><td>$3,907</td><td>$1,172</td></tr>
+<tr><td>#8</td><td>$5,079</td><td>$1,524</td></tr>
+<tr><td>#9</td><td>$6,603</td><td>$1,981</td></tr>
+<tr><td>#10</td><td>$8,584</td><td>$2,575</td></tr>
+<tr><td>#11</td><td>$11,159</td><td>$3,348</td></tr>
+<tr><td>#12</td><td>$14,506</td><td>$4,352</td></tr>
+<tr><td>#13</td><td>$18,858</td><td>$5,658</td></tr>
+<tr><td>#14</td><td>$24,516</td><td>$7,355</td></tr>
+<tr><td>#15</td><td>$31,871</td><td>$9,561</td></tr>
+<tr><td>#16</td><td>$41,432</td><td>$12,430</td></tr>
+<tr><td>#17</td><td>$53,861</td><td>$16,158</td></tr>
+<tr><td>#18</td><td>$70,020</td><td>$21,006</td></tr>
+<tr><td>#19</td><td>$91,026</td><td>$27,308</td></tr>
+<tr><td>#20</td><td>$109,231</td><td>$32,769</td></tr>
+<tr><td>#21</td><td>$131,077</td><td>$39,323</td></tr>
+<tr><td>#22</td><td>$157,293</td><td>$47,188</td></tr>
+<tr><td>#23</td><td>$188,751</td><td>$56,625</td></tr>
+<tr><td>#24</td><td>$226,501</td><td>$67,950</td></tr>
+</tbody>
+</table>`;
+    }
+}
+
+document.querySelector(".popup-close").onclick = function () {
+    popup.style.display = "none";
+};
+
+window.onclick = function (event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+};
+    </script>
 </body>
 
 </html>
