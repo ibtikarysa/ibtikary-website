@@ -999,3 +999,28 @@ margin:0 10px;
     font-size:17px;
     line-height:1.8;
   }
+
+.nav-menu.active{
+    display:flex;
+}
+
+.nav-menu{
+    position:absolute;
+    top:80px;
+    right:20px;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    min-width:220px;
+    z-index:1000;
+}
+
+.nav-menu li{
+    list-style:none;
+}
+
+.nav-menu a{
+    display:block;
+    padding:10px 0;
+}
