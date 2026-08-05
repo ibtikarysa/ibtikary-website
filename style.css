@@ -67,6 +67,30 @@ align-items:center;
 padding:18px 0;
 
 }
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-toggle{
+    background:none;
+    border:none;
+    font-size:32px;
+    cursor:pointer;
+}
+
+.nav-menu{
+    list-style:none;
+    display:none;
+    flex-direction:column;
+    gap:20px;
+}
+
+.nav-menu li a{
+    color:#1b1b1b;
+    font-weight:600;
+}
 
 .logo{
 
