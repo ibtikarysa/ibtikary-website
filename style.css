@@ -502,42 +502,6 @@ border-top:2px solid rgba(255,255,255,0.25);
     background:#f8f9fb;
 }
 
-.stats{
-
-background:#0d47a1;
-
-color:white;
-
-padding:80px 0;
-
-}
-
-.stats-grid{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:30px;
-
-text-align:center;
-
-}
-
-.stat h2{
-
-font-size:48px;
-
-margin-bottom:10px;
-
-}
-
-.stat p{
-
-font-size:18px;
-
-}
-
 @media(max-width:900px){
 
 .hero-grid,
