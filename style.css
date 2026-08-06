@@ -499,9 +499,7 @@ border-top:2px solid rgba(255,255,255,0.25);
 
 @media(max-width:900px){
 
-.hero-grid
-
-{
+.hero-grid{
 
 grid-template-columns:1fr;
 
