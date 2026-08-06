@@ -327,42 +327,7 @@ color:#555;
     background:#f2f5ff;
     transform:translateY(-3px);
 }
-.faq{
-    padding:80px 20px;
-    background:#f8f9fc;
-}
 
-.faq h2{
-    text-align:center;
-    color:#0d47a1;
-    font-size:2.2rem;
-    margin-bottom:40px;
-}
-
-.faq-item{
-    max-width:900px;
-    margin:20px auto;
-    background:#fff;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 18px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.faq-item:hover{
-    transform:translateY(-4px);
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-.faq-item h3{
-    color:#0d47a1;
-    margin-bottom:12px;
-}
-
-.faq-item p{
-    color:#555;
-    line-height:1.7;
-}
 .trusted{
     padding:80px 20px;
     background:#56C58F;
