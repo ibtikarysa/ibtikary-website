@@ -286,45 +286,7 @@ color:#555;
     background:#0d47a1;
     color:#fff;
 }
-.why-promote{
-    padding:60px 20px;
-    text-align:center;
-}
 
-.why-promote h2{
-    font-size:2rem;
-    color:#0d47a1;
-    margin-bottom:40px;
-}
-
-.benefits-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.benefit-card{
-    background:#fff;
-    border-radius:14px;
-    padding:25px;
-    box-shadow:0 5px 18px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.benefit-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-.benefit-card h3{
-    color:#0d47a1;
-    margin-bottom:15px;
-}
-
-.benefit-card p{
-    color:#555;
-    line-height:1.7;
-    }
 .how-it-works{
     padding:60px 20px;
     text-align:center;
