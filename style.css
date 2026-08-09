@@ -699,6 +699,115 @@ font-size:30px;
     line-height:1.8;
   }
 
+/* =========================
+   Wndoo - What is Wndoo?
+========================= */
+
+.wndoo-showcase {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.wndoo-showcase-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wndoo-showcase-header {
+    max-width: 760px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.wndoo-section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5fcb9a;
+}
+
+.wndoo-showcase-header h2 {
+    margin: 0 0 18px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.wndoo-showcase-header p {
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b6472;
+}
+
+.wndoo-showcase-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.wndoo-showcase-image img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+}
+
+.wndoo-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.wndoo-feature {
+    padding: 28px 24px;
+    text-align: center;
+    border-radius: 12px;
+    background: #f7f9fc;
+}
+
+.wndoo-feature h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.wndoo-feature p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #5b6472;
+}
+
+@media (max-width: 768px) {
+
+    .wndoo-showcase {
+        padding: 65px 0;
+    }
+
+    .wndoo-showcase-header {
+        margin-bottom: 35px;
+    }
+
+    .wndoo-showcase-image {
+        margin-bottom: 35px;
+    }
+
+    .wndoo-features {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+        }
+
 .nav-menu.active{
     display:flex;
 }
