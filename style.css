@@ -759,7 +759,20 @@ font-size:30px;
     height: auto;
     object-fit: contain;
 }
+.wndoo-image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto 55px;
+}
 
+.wndoo-image-gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: block;
+}
 .wndoo-features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -800,7 +813,11 @@ font-size:30px;
     .wndoo-showcase-image {
         margin-bottom: 35px;
     }
-
+.wndoo-image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 35px;
+}
     .wndoo-features {
         grid-template-columns: 1fr;
         gap: 16px;
