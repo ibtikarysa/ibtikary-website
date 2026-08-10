@@ -825,6 +825,205 @@ font-size:30px;
 
         }
 
+/* =========================
+   Wndoo - Product Development
+========================= */
+
+.wndoo-development {
+    padding: 90px 0;
+    background: #f7f9fc;
+}
+
+.wndoo-development-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Header */
+
+.wndoo-development-header {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.wndoo-development-header .wndoo-section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5fcb9a;
+}
+
+.wndoo-development-header h2 {
+    margin: 0 0 18px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.wndoo-development-tagline {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #5b6472;
+}
+
+/* Introduction */
+
+.wndoo-development-intro {
+    max-width: 780px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.wndoo-development-intro p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b6472;
+}
+
+/* Development Ideas */
+
+.wndoo-development-ideas {
+    margin-top: 30px;
+}
+
+.wndoo-development-ideas h3 {
+    margin: 0 0 12px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.wndoo-development-subtitle {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #5b6472;
+}
+
+/* Development Cards */
+
+.wndoo-development-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.wndoo-development-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
+    border: 1px solid #e8edf5;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.wndoo-development-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(0,0,0,.10);
+}
+
+/* Development Images */
+
+.wndoo-development-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    background: #f8f9fc;
+}
+
+/* Card Text */
+
+.wndoo-development-card h4 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    font-weight: 700;
+    color: #0d47a1;
+}
+
+.wndoo-development-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #5b6472;
+}
+
+
+/* =========================
+   Product Development Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+    .wndoo-development {
+        padding: 65px 0;
+    }
+
+    .wndoo-development-container {
+        padding: 0 20px;
+    }
+
+    .wndoo-development-header {
+        margin-bottom: 35px;
+    }
+
+    .wndoo-development-header h2 {
+        font-size: 32px;
+    }
+
+    .wndoo-development-tagline {
+        font-size: 17px;
+    }
+
+    .wndoo-development-intro {
+        margin-bottom: 40px;
+    }
+
+    .wndoo-development-intro p {
+        font-size: 16px;
+    }
+
+    .wndoo-development-ideas h3 {
+        font-size: 26px;
+    }
+
+    .wndoo-development-subtitle {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .wndoo-development-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .wndoo-development-card {
+        padding: 20px;
+    }
+
+    .wndoo-development-card h4 {
+        font-size: 20px;
+    }
+
+    .wndoo-development-card p {
+        font-size: 15px;
+    }
+
+    }
+
 .nav-menu.active{
     display:flex;
 }
