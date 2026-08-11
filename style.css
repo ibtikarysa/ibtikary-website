@@ -863,7 +863,7 @@ font-size:30px;
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.15;
     font-weight: 800;
-    color: #1f2937;
+    color: #0d47a1;
 }
 
 .wndoo-development-tagline {
@@ -899,7 +899,7 @@ font-size:30px;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    color: #1f2937;
+    color: #0d47a1;
 }
 
 .wndoo-development-subtitle {
