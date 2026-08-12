@@ -1483,3 +1483,54 @@ font-size:30px;
     }
 
     }
+
+/* =========================
+   Wndoo Opportunity Message
+========================= */
+
+.wndoo-opportunity-message {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    background: #ffffff;
+    border: 1px solid #e8edf5;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.wndoo-opportunity-message h3 {
+    margin: 0 0 12px;
+    font-size: 28px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #0d47a1;
+}
+
+.wndoo-opportunity-message p {
+    margin: 0 auto;
+    max-width: 720px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b6472;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .wndoo-opportunity-message {
+        padding: 28px 22px;
+    }
+
+    .wndoo-opportunity-message h3 {
+        font-size: 24px;
+    }
+
+    .wndoo-opportunity-message p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+}
