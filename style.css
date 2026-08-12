@@ -1534,3 +1534,237 @@ font-size:30px;
     }
 
 }
+
+/* =========================
+   Wndoo - Available License Options
+========================= */
+
+.wndoo-licenses {
+    padding: 90px 0;
+    background: #f7f9fc;
+}
+
+.wndoo-licenses-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section Header */
+
+.wndoo-licenses-header {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.wndoo-licenses-header .wndoo-section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5fcb9a;
+}
+
+.wndoo-licenses-header h2 {
+    margin: 0 0 18px;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 800;
+    color: #0d47a1;
+}
+
+.wndoo-licenses-subtitle {
+    margin: 0 auto 28px;
+    max-width: 720px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5b6472;
+}
+
+/* Buy Button */
+
+.wndoo-license-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 10px;
+    background: #5fcb9a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 8px 20px rgba(95, 203, 154, 0.20);
+}
+
+.wndoo-license-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(95, 203, 154, 0.28);
+}
+
+/* Introduction */
+
+.wndoo-licenses-intro {
+    max-width: 800px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.wndoo-licenses-intro p {
+    margin: 0 0 18px;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #5b6472;
+}
+
+.wndoo-licenses-intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* License Table */
+
+.wndoo-license-table-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.wndoo-license-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+}
+
+.wndoo-license-table th {
+    padding: 20px 24px;
+    background: #0d47a1;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+}
+
+.wndoo-license-table th:last-child {
+    text-align: right;
+}
+
+.wndoo-license-table td {
+    padding: 19px 24px;
+    border-bottom: 1px solid #e8edf5;
+    color: #263238;
+    font-weight: 500;
+}
+
+.wndoo-license-table td:last-child {
+    text-align: right;
+    color: #0d47a1;
+    font-weight: 700;
+}
+
+.wndoo-license-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.wndoo-license-table tbody tr:hover {
+    background: #f8fbff;
+}
+
+/* Final Message */
+
+.wndoo-license-message {
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 30px 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e6edf3;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.wndoo-license-message h3 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: #0d47a1;
+}
+
+.wndoo-license-message p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #5b6472;
+}
+
+
+/* =========================
+   Available License Options
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+    .wndoo-licenses {
+        padding: 65px 0;
+    }
+
+    .wndoo-licenses-container {
+        padding: 0 20px;
+    }
+
+    .wndoo-licenses-header {
+        margin-bottom: 40px;
+    }
+
+    .wndoo-licenses-header h2 {
+        font-size: 32px;
+    }
+
+    .wndoo-licenses-subtitle {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .wndoo-license-btn {
+        padding: 13px 25px;
+        font-size: 15px;
+    }
+
+    .wndoo-licenses-intro {
+        margin-bottom: 35px;
+    }
+
+    .wndoo-licenses-intro p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .wndoo-license-table {
+        font-size: 15px;
+    }
+
+    .wndoo-license-table th,
+    .wndoo-license-table td {
+        padding: 16px 15px;
+    }
+
+    .wndoo-license-message {
+        margin-top: 40px;
+        padding: 25px 20px;
+    }
+
+    .wndoo-license-message h3 {
+        font-size: 21px;
+    }
+
+    .wndoo-license-message p {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+}
