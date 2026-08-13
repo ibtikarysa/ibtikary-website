@@ -1623,54 +1623,56 @@ font-size:30px;
     margin-bottom: 0;
 }
 
-/* License Table */
+/* License Levels */
 
-.wndoo-license-table-wrapper {
+.wndoo-license-levels {
     max-width: 800px;
     margin: 0 auto;
-    overflow-x: auto;
-    background: #ffffff;
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
 }
 
-.wndoo-license-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 17px;
-}
-
-.wndoo-license-table th {
-    padding: 20px 24px;
-    background: #0d47a1;
-    color: #ffffff;
-    font-weight: 700;
-    text-align: left;
-}
-
-.wndoo-license-table th:last-child {
-    text-align: right;
-}
-
-.wndoo-license-table td {
-    padding: 19px 24px;
-    border-bottom: 1px solid #e8edf5;
-    color: #263238;
-    font-weight: 500;
-}
-
-.wndoo-license-table td:last-child {
-    text-align: right;
+.wndoo-license-levels-title {
+    margin: 0 0 22px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
     color: #0d47a1;
+}
+
+.wndoo-license-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.wndoo-license-card {
+    background: #ffffff;
+    border: 1px solid #e6edf3;
+    border-radius: 16px;
+    padding: 22px 18px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.wndoo-license-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+.wndoo-license-card span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
     font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #5b6472;
 }
 
-.wndoo-license-table tbody tr:last-child td {
-    border-bottom: none;
-}
-
-.wndoo-license-table tbody tr:hover {
-    background: #f8fbff;
+.wndoo-license-card strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0d47a1;
 }
 
 /* Final Message */
