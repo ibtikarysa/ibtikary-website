@@ -1747,14 +1747,28 @@ font-size:30px;
         line-height: 1.75;
     }
 
-    .wndoo-license-table {
-        font-size: 15px;
-    }
+    .wndoo-license-levels-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
 
-    .wndoo-license-table th,
-    .wndoo-license-table td {
-        padding: 16px 15px;
-    }
+.wndoo-license-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.wndoo-license-card {
+    padding: 20px 12px;
+    border-radius: 14px;
+}
+
+.wndoo-license-card span {
+    font-size: 12px;
+}
+
+.wndoo-license-card strong {
+    font-size: 18px;
+}
 
     .wndoo-license-message {
         margin-top: 40px;
