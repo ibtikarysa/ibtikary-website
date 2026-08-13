@@ -27,3 +27,26 @@ document.addEventListener("click", function (event) {
     }
 });
 });
+/* =========================
+   WNDOO FAQ ACCORDION
+========================= */
+
+document.querySelectorAll(".wndoo-faq-question").forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const faqItem = button.parentElement;
+
+        document.querySelectorAll(".wndoo-faq-item").forEach(function (item) {
+
+            if (item !== faqItem) {
+                item.classList.remove("active");
+            }
+
+        });
+
+        faqItem.classList.toggle("active");
+
+    });
+
+});
