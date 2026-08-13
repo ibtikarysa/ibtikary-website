@@ -1670,9 +1670,9 @@ font-size:30px;
 
 .wndoo-license-card strong {
     display: block;
-    font-size: 20px;
-    font-weight: 800;
-    color: #0d47a1;
+    font-size: 17px;
+    font-weight: 500;
+    color: #5fcb9a;
 }
 
 /* Final Message */
@@ -1767,7 +1767,7 @@ font-size:30px;
 }
 
 .wndoo-license-card strong {
-    font-size: 18px;
+    font-size: 17px;
 }
 
     .wndoo-license-message {
