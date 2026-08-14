@@ -2058,7 +2058,9 @@ font-size:30px;
     color: #ffffff;
     transform: rotate(45deg);
 }
-
+.wndoo-faq-item.active .wndoo-faq-answer {
+    max-height: 1000px;
+}
 
 /* =========================
    FAQ MOBILE
