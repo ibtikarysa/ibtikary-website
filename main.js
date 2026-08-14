@@ -31,21 +31,29 @@ document.addEventListener("click", function (event) {
    WNDOO FAQ ACCORDION
 ========================= */
 
-document.querySelectorAll(".wndoo-faq-question").forEach(function (button) {
+document.addEventListener("DOMContentLoaded", function () {
 
-    button.addEventListener("click", function () {
+    const faqQuestions = document.querySelectorAll(".wndoo-faq-question");
 
-        const faqItem = button.parentElement;
+    faqQuestions.forEach(function (button) {
 
-        document.querySelectorAll(".wndoo-faq-item").forEach(function (item) {
+        button.addEventListener("click", function () {
 
-            if (item !== faqItem) {
-                item.classList.remove("active");
-            }
+            const faqItem = button.closest(".wndoo-faq-item");
+
+            if (!faqItem) return;
+
+            document.querySelectorAll(".wndoo-faq-item").forEach(function (item) {
+
+                if (item !== faqItem) {
+                    item.classList.remove("active");
+                }
+
+            });
+
+            faqItem.classList.toggle("active");
 
         });
-
-        faqItem.classList.toggle("active");
 
     });
 
