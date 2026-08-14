@@ -1281,6 +1281,25 @@ font-size:30px;
     font-weight: 700;
     color: #111827;
 }
+.tagline-own {
+    color: #EA580C;
+}
+
+.tagline-develop {
+    color: #5fcb9a;
+}
+
+.tagline-manufacture {
+    color: #0d47a1;
+}
+
+.tagline-sell {
+    color: #EA580C;
+}
+
+.tagline-dot {
+    color: #111827;
+}
 
 .wndoo-description {
     max-width: 650px;
