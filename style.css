@@ -1918,7 +1918,7 @@ font-size:30px;
 
 
 /* =========================
-   FAQ
+   WNDOO FAQ
 ========================= */
 
 .wndoo-faq {
@@ -1931,34 +1931,69 @@ font-size:30px;
     margin: 0 auto;
 }
 
+
+/* FAQ Header */
+
 .wndoo-faq-header {
+    max-width: 760px;
+    margin: 0 auto 45px;
     text-align: center;
-    margin-bottom: 45px;
+}
+
+.wndoo-faq-header .wndoo-section-label {
+    color: #5fcb9a;
 }
 
 .wndoo-faq-header h2 {
     margin: 12px 0 16px;
+    font-size: clamp(32px, 4vw, 44px);
+    line-height: 1.15;
+    font-weight: 800;
+    color: #0d47a1;
 }
 
 .wndoo-faq-header p {
-    margin: 0;
-    color: #64748b;
-    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5b6472;
 }
+
+
+/* FAQ List */
 
 .wndoo-faq-list {
     width: 100%;
 }
 
+
+/* FAQ Item */
+
 .wndoo-faq-item {
-    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 14px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+.wndoo-faq-item:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+
+/* Question */
+
 .wndoo-faq-question {
+    position: relative;
     width: 100%;
-    padding: 22px 5px;
+    padding: 22px 24px;
     border: none;
-    background: transparent;
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1967,16 +2002,35 @@ font-size:30px;
     cursor: pointer;
     font-family: inherit;
     font-size: 17px;
-    font-weight: 600;
-    color: #111827;
+    font-weight: 700;
+    color: #0d47a1;
 }
+
+.wndoo-faq-question:hover {
+    color: #0d47a1;
+}
+
+
+/* Plus Icon */
 
 .wndoo-faq-icon {
     flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eaf8f1;
+    color: #5fcb9a;
     font-size: 24px;
-    font-weight: 400;
-    transition: transform 0.25s ease;
+    font-weight: 500;
+    line-height: 1;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
+
+
+/* Answer */
 
 .wndoo-faq-answer {
     max-height: 0;
@@ -1986,51 +2040,69 @@ font-size:30px;
 
 .wndoo-faq-answer p {
     margin: 0;
-    padding: 0 35px 22px 5px;
-    color: #64748b;
-    line-height: 1.7;
+    padding: 0 24px 22px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #5b6472;
 }
 
-.wndoo-faq-item.active .wndoo-faq-answer {
-    max-height: 300px;
+
+/* Active FAQ */
+
+.wndoo-faq-item.active {
+    border-color: #5fcb9a;
 }
 
 .wndoo-faq-item.active .wndoo-faq-icon {
+    background: #5fcb9a;
+    color: #ffffff;
     transform: rotate(45deg);
 }
 
 
 /* =========================
-   MOBILE
+   FAQ MOBILE
 ========================= */
 
 @media (max-width: 700px) {
-
-    .wndoo-audience {
-        padding: 65px 18px;
-    }
-
-    .wndoo-audience-grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .wndoo-audience-card {
-        padding: 25px;
-    }
 
     .wndoo-faq {
         padding: 65px 18px;
     }
 
+    .wndoo-faq-header {
+        margin-bottom: 35px;
+    }
+
+    .wndoo-faq-header h2 {
+        font-size: 32px;
+    }
+
+    .wndoo-faq-header p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .wndoo-faq-item {
+        margin-bottom: 12px;
+        border-radius: 13px;
+    }
+
     .wndoo-faq-question {
-        padding: 20px 2px;
+        padding: 19px 18px;
         font-size: 16px;
     }
 
+    .wndoo-faq-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 22px;
+    }
+
     .wndoo-faq-answer p {
-        padding-left: 2px;
-        padding-right: 20px;
+        padding: 0 18px 20px;
+        font-size: 15px;
+        line-height: 1.75;
     }
 
 }
