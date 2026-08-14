@@ -903,7 +903,7 @@ font-size:30px;
 
 .wndoo-development {
     padding: 90px 0;
-    background: #6bd6a6;
+    background: #defbed;
 }
 
 .wndoo-development-container {
@@ -927,7 +927,7 @@ font-size:30px;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #f47a20;
 }
 
 .wndoo-development-header h2 {
@@ -935,14 +935,14 @@ font-size:30px;
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.15;
     font-weight: 800;
-    color: #0d47a1;
+    color: #00b86b;
 }
 
 .wndoo-development-tagline {
     margin: 0;
     font-size: 19px;
     line-height: 1.7;
-    color: #ffffff;
+    color: #5b7085;
 }
 
 /* Introduction */
@@ -957,7 +957,7 @@ font-size:30px;
     margin: 0;
     font-size: 17px;
     line-height: 1.8;
-    color: #16324f;
+    color: #5b7085;
 }
 
 /* Development Ideas */
@@ -971,7 +971,7 @@ font-size:30px;
     text-align: center;
     font-size: 30px;
     font-weight: 700;
-    color: #ea580c;
+    color: #f47a20;
 }
 
 .wndoo-development-subtitle {
@@ -980,7 +980,7 @@ font-size:30px;
     text-align: center;
     font-size: 16px;
     line-height: 1.8;
-    color: #ffffff;
+    color: #00b86b;
 }
 
 /* Development Cards */
